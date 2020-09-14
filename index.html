@@ -3,10 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="styles.css">
+
     <title>Document</title>
 </head>
 <body>
-    <h1>Hello World</h1>
+    <div class="container">
+        <div id="personalInfo" class="content">
+            <h1>Brandon Chase</h1>
+            <img src="imgs/PlaceholderProfilePic.png" alt="profile picture">
+            <ul id="about">
+                <li>Computer science senior at Utah Valley University</li>
+                <li>Los Angeles Rams fan</li>
+            </ul>
+            <!-- <h3 id="bioTitle" class="clickable" onclick="toggleDescription('bio')"><span>Bio</span></h3>
+            <p id="bio" style="display:none">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto hic mollitia perferendis
+                 doloremque voluptatem deserunt quia. Dolorum suscipit veniam soluta assumenda ut? Nostrum, cum 
+                 ratione dolor commodi cumque laboriosam a temporibus non. Sapiente repudiandae deleniti molestiae
+                  enim asperiores, necessitatibus similique! Exercitationem doloribus quaerat cum ipsum maxime, vero similique quia reiciendis.
+            </p> -->
+        </div>
+
+        <div id="skills" class="content">
+
+            <h2>My main skills are</h2>
+            <div id="mainSkills" class="skillsList content">
+             
+                <div>
+                    <img src="imgs/Python-logo.svg" alt="JavaScript-logo" class="logos">
+                    <p>Python</p>
+                </div>
+                <div>
+                    <img src="imgs/JavaScript-logo.png" alt="JavaScript-logo" class="logos">
+                    <p>JavaScript</p>
+                </div>
+                <div>
+                    <img src="imgs/HTML5-logo.svg.png" alt="JavaScript-logo" class="logos">
+                    <p>HTML</p>
+                </div>
+                <div>
+                    <img src="imgs/jQuery-logo.png" alt="JavaScript-logo" class="logos">
+                    <p>jQuery</p>
+                </div>
+                <div>
+                    <img src="imgs/SQL-logo.jpg" alt="JavaScript-logo" class="logos">
+                    <p>SQL</p>
+                </div>
+            </div>
+
+            <h2>I am also familiar with</h2>
+            <div id="secondarySkills" class="skillsList content">
+    
+                <div>
+                    <img src="imgs/NoSQL-logo.jpg" alt="JavaScript-logo" class="logos">
+                    <p>NoSQL</p>
+                </div>
+                <div>
+                    <img src="imgs/Nodejs-logo.png" alt="JavaScript-logo" class="logos">
+                    <p>Node.js</p>
+                </div>
+                <div>
+                    <img src="imgs/Reactjs-logo.png" alt="JavaScript-logo" class="logos">
+                    <p>React.js</p>
+                </div>
+                <div>
+                    <img src="imgs/Bootstrap-logo.png" alt="JavaScript-logo" class="logos">
+                    <p>Bootstrap</p>
+                </div>
+                <div>
+                    <img src="imgs/Java-logo.png" alt="JavaScript-logo" class="logos">
+                    <p>Java</p>
+                </div>
+                <div>
+                    <img src="imgs/C++-logo.png" alt="JavaScript-logo" class="logos">
+                    <p>C++</p>
+                </div>
+
+
+            </div>
+        </div>
+        <div id="projects" class="content">
+            <h2>Projects</h2>
+            <h3 class="clickable" onclick="toggleDescription('projectDescription1')"><span>Rolling Hills Glencairn Community Website - Freelance Work</span></h3>
+            <p id="projectDescription1" style="display:none">
+                Hired to create the official website 
+                <a href="http://rollinghillsglencairn.com/">rollinghillsglencairn.com</a> 
+                 for the Rolling Hills Glencairn community in Oak Harbor, Washington.
+                Created using Wordpress to allow the employees learn to post to or edit the website after it was complete.
+            </p>
+
+            <h3 class="clickable"  onclick="toggleDescription('projectDescription2')"><span>LOA's Ark - School Project</span></h3>
+            <span id="projectDescription2" style="display:none">
+                <p>
+                    Full-stack web application for displaying information about owners and their pets as well 
+                    as the ability to add, update, delete or search for specific owners within the database.
+                </p>
+                <p>
+                    Client-side used HTML with Bootstrap for styling and jQuery for DOM manipulation and AJAX.  
+                    Backend used PHP and Apache for the server and MySQL for the database (XAMP). 
+                </p>
+                <p>
+                    Here is a <a href="https://youtu.be/g3k2ogniNyA">quick demo</a> of the assignment that was submitted with the code. 
+                    I cannot show the actual code because it is a school project.
+                </p>
+            </span>
+                
+            <h3 class="clickable" onclick="toggleDescription('projectDescription3')"><span>Football Simulator - Personal Side Project</span></h3>
+            <span id="projectDescription3" style="display:none">
+                <p>
+                    Full-stack web application of a simple football game.
+                    Learned  basics of React.js for frontend.  Database uses Mongodb with Mongoose and Node.js acting as the server.
+                </p>
+                <p>
+                    Github repository <a href="https://github.com/bchase93/FootballGame">here</a>
+                </p>
+            </span>
+        </div>
+
+        <!-- <div id="footer" class="content">
+            <a href="https://www.facebook.com/brandon.chase.505">Facebook</a>
+        </div> -->
+    </div>
+
+    <script>
+        function toggleDescription(description) {
+            let b = document.getElementById(description);
+            if (b.style.display === 'none') {
+
+                b.style.display = 'block';
+            }
+            else {
+                b.style.display = 'none';
+            }
+        }
+    </script>
+        
 </body>
 </html>
